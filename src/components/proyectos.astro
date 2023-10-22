@@ -1,0 +1,54 @@
+---
+interface Props {
+  href: string;
+  src: string;
+  number: string;
+  body: string;
+}
+
+const { href, src, number, body } = Astro.props;
+---
+
+<section class="contain">
+  <h4 class="contain_h4">{number}</h4>
+  <p class="contain_p">{body}</p>
+  <img src={src} alt="projects" class="contain_img" />
+
+  <button class="contain_btn"><a href={href} class="contain_a" target="_blank">Visit</a></button
+  >
+</section>
+
+<style lang="SCSS">
+  $white: #fff;
+  $black: #000;
+  $green1: #a4c3b2;
+  $green2: #6b9080;
+  $gray: #8d8b8b;
+
+  .contain {
+    text-align: center;
+    width: 30%;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+    &_img {
+      scale: 16/9;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &_btn {
+      text-decoration: none;
+      background-color: $green2;
+      padding: 10px 50px;
+      border-radius: 15px;
+    }
+
+    &_a {
+      text-decoration: none;
+      color:$white;
+      font-size:1rem
+    }
+  }
+</style>

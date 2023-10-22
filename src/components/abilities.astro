@@ -1,0 +1,45 @@
+---
+interface Props {
+  clase: string;
+  body: string;
+}
+
+const { clase, body } = Astro.props;
+---
+
+<section class="container">
+  <i class={clase}></i>
+  <p class="container_p">{body}</p>
+</section>
+
+<style lang="SCSS">
+  $white: #fff;
+  $black: #000;
+  $green1: #a4c3b2;
+  $green2: #6b9080;
+  $gray: #8d8b8b;
+  
+  .container {
+    text-align:center;
+    background-color: $white;
+    width:150px;
+    border-radius: 5px;
+    border: 1px solid black;  
+
+    i{
+        position: relative;
+        top: -20px;
+        color: #333;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid black;
+        border-radius: 50%;
+        font-size: 1rem;
+    }
+
+    &_p{
+        margin: auto;
+        padding: 5px;
+    }
+  }
+</style>

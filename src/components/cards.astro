@@ -1,0 +1,30 @@
+---
+interface Props{
+    number: number,
+    body: string
+}
+
+const {number,body} = Astro.props
+---
+
+<div class="card">
+    <p class="card_p card_p-1">{number}</p>
+    <p class="card_p card_p-2">{body}</p>
+</div>
+
+<style lang="SCSS">
+    .card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &_p-1{
+            font-family: "Climate Crisis",sans-serif;
+            font-size: 1.5rem;
+        }
+
+        &_p-2{
+            font-family: Poppins,sans-serif;
+            font-size: 1.2rem;
+        }
+    }
+</style>

@@ -1,0 +1,40 @@
+---
+const date = new Date().getFullYear()
+---
+
+<footer>
+    <section class="container">
+        <a href="https://x.com/JuanSinFiltroo" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/JuanSinFiltroo" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://github.com/JuanP4bl0" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        <p>&copy {date}</p>
+    </section>
+</footer>
+
+<style lang="SCSS">
+    $white: #fff;
+    $black: #000;
+    $green1: #a4c3b2;
+    $green2: #6b9080;
+    $gray: #8d8b8b;
+
+    .container{
+        width: 100%;
+        display: flex;
+        padding: 60px;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    i{
+        color: #fff;
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    i:hover{
+        object-fit: cover;
+        background-color: $green1;
+        border-radius:50%
+    }
+</style>

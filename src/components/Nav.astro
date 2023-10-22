@@ -1,0 +1,45 @@
+---
+
+---
+
+<nav class="nav">
+    <ul class="nav_ul">
+        <a href="/" class="nav_a"><li class="nav_li">Home</li></a>
+        <a href="#About" class="nav_a"><li class="nav_li">About</li></a>
+        <a href="#Projects" class="nav_a"><li class="nav_li">Works</li></a>
+        <a href="#Contact" class="nav_a"><li class="nav_li">Contact</li></a>
+    </ul>
+</nav>
+
+
+<style lang="SCSS">
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        position: fixed;
+        width: 100vw;
+        background-color: black;;
+        
+        &_ul{
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            list-style: none;
+        }
+
+        &_a{
+            text-decoration: none;
+        }
+
+        &_li{
+            color: #fff;
+            font-size: 1.3rem;
+            font-family: Poppins;
+        }
+    }
+</style>

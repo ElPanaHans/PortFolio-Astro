@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  body: string;
+}
+const { title, body } = Astro.props;
+---
+
+<section class="about">
+  <div class="contain">
+    <div class="titulo">
+      <h3 class="titulo_h3">{title}</h3>
+    </div>
+    <div class="info">
+      <p class="info_info">{body}</p>
+    </div>
+  </div>
+</section>
+
+<style lang="SCSS">
+  $white: #fff;
+  $black: #000;
+  $green1: #a4c3b2;
+  $green2: #6b9080;
+  $gray: #8d8b8b;
+
+  .about {
+    padding: 20px;
+    width: 100vw;
+    background-color: $black;
+
+    .contain {
+      margin: 0 auto;
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      color: $white;
+
+      .titulo{
+        width: 30%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .info{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+</style>
