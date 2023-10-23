@@ -3,49 +3,60 @@
 ---
 
 <nav class="nav">
-    <ul class="nav_ul">
-        <a href="/" class="nav_a"><li class="nav_li">Home</li></a>
-        <a href="#About" class="nav_a"><li class="nav_li">About</li></a>
-        <a href="#Projects" class="nav_a"><li class="nav_li">Works</li></a>
-        <a href="#Contact" class="nav_a"><li class="nav_li">Contact</li></a>
-    </ul>
+  <ul class="nav_ul">
+    <a href="/" class="nav_a"><li class="nav_li">Home</li></a>
+    <a href="#About" class="nav_a"><li class="nav_li">About</li></a>
+    <a href="#Projects" class="nav_a"><li class="nav_li">Works</li></a>
+    <a href="#Contact" class="nav_a"><li class="nav_li">Contact</li></a>
+  </ul>
 </nav>
 
-
 <style lang="SCSS">
+  $white: #fff;
+  $black: #000;
+  $green1: #a4c3b2;
+  $green2: #6b9080;
+  $gray: #8d8b8b;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
 
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    &_ul {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      list-style: none;
+
+      :hover {
+        background-color: $green1;
+        border-radius: 15px;
+      }
     }
-    .nav{
-        position: fixed;
-        width: 100vw;
-        background-color: black;;
-        
-        &_ul{
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 100px;
-            list-style: none;
-        }
 
-        &_a{
-            text-decoration: none;
-        }
-
-        &_li{
-            color: #fff;
-            font-size: 1.3rem;
-            font-family: Poppins;
-        }
+    &_a {
+      text-decoration: none;
+      padding: 10px;
     }
 
-    @media (max-width: 575px){
-        .nav{
-            display: none;
-        }
+    &_li {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: Poppins;
     }
+  }
+
+  @media (max-width: 575px) {
+    .nav {
+      display: none;
+    }
+  }
 </style>
