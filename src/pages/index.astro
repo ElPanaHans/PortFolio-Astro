@@ -113,23 +113,36 @@ import Abilities from "../components/abilities.astro";
       </div>
     </div>
   </section>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,256C384,267,480,245,576,250.7C672,256,768,288,864,282.7C960,277,1056,235,1152,202.7C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+    ><path
+      fill="#fff"
+      fill-opacity="1"
+      d="M0,160L48,181.3C96,203,192,245,288,256C384,267,480,245,576,250.7C672,256,768,288,864,282.7C960,277,1056,235,1152,202.7C1248,171,1344,149,1392,138.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+    ></path></svg
+  >
   <section class="contact" id="Contact">
-	<div class="contain">
-	  <h3 class="contact_h3">!Contact Me!</h3>
-	  <p class="contact_p">
-		If you are looking for a programmer who knows what he is doing, look no
-		further. Let's talk about your projects and see how I can help you!
-	  </p>
-	  <div class="action">
-		<button class="btn_p action_btn-1">Send me a message <i class="fa-solid fa-paper-plane" style="color: #1e3050;"></i></button>
-		<button class="btn_p action_btn-2">CV <i class="fa-solid fa-arrow-down" style="color: #1e3050;"></i></button>
-	  </div>
-	</div>
+    <div class="contain">
+      <h3 class="contact_h3">!Contact Me!</h3>
+      <p class="contact_p">
+        If you are looking for a programmer who knows what he is doing, look no
+        further. Let's talk about your projects and see how I can help you!
+      </p>
+      <div class="action">
+        <button class="btn_p action_btn-1"
+          >Send me a message <i
+            class="fa-solid fa-paper-plane"
+            style="color: #1e3050;"></i></button
+        >
+        <button class="btn_p action_btn-2"
+          >CV <i class="fa-solid fa-arrow-down" style="color: #1e3050;"
+          ></i></button
+        >
+      </div>
+    </div>
   </section>
 </Layout>
 
-
+<!-- Estilos Generales -->
 <style lang="SCSS">
   $white: #fff;
   $black: #000;
@@ -165,7 +178,7 @@ import Abilities from "../components/abilities.astro";
     .cont-2 {
       margin: 0 auto;
       text-align: left;
-      width: 80%;
+      width: 60%;
     }
 
     &_h1 {
@@ -286,37 +299,323 @@ import Abilities from "../components/abilities.astro";
   }
 
   .contact {
-	.contain{
-	text-align: center;
-	width: 50%;
-    margin: auto;
-	}
+    .contain {
+      text-align: center;
+      width: 50%;
+      margin: auto;
+    }
 
     &_h3 {
       font-size: 2.5rem;
-	  font-family: "Climate Crisis",sans-serif;
-	  color: $white;
-	  margin-bottom: 20px;
+      font-family: "Climate Crisis", sans-serif;
+      color: $white;
+      margin-bottom: 20px;
     }
 
-	&_p{
-		font-size: 1.2rem;
-		color: $white;
-		margin-bottom:20px;
-	}
+    &_p {
+      font-size: 1.2rem;
+      color: $white;
+      margin-bottom: 20px;
+    }
 
-	.btn_p{
-		padding: 20px;
-		border: none;
-		border-radius: 10px;
-	}
+    .btn_p {
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+    }
 
-	.action_btn-1{
-		background-color: $green1;
-	}
+    .action_btn-1 {
+      background-color: $green1;
+    }
 
-	.action_btn-2{
-		background-color: $green2;
-	}
+    .action_btn-2 {
+      background-color: $green2;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 574px) {
+    .header {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column-reverse;
+      height: 70vh;
+      width: 100vw;
+
+      &_text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+      }
+
+      &_h1 {
+        margin: auto;
+        font-family: "Climate Crisis", sans-serif;
+        font-size: 4.5rem;
+        color: $white;
+      }
+
+      &_img {
+        display: block;
+        width: 100vw;
+      }
+
+      &_logo {
+        display: block;
+        margin: auto;
+        width: 50%;
+        border-radius: 0 150px 0 150px;
+      }
+    }
+
+    .project {
+      background-color: $white;
+      padding: 50px;
+
+      &_h3 {
+        font-family: "Climate Crisis", sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+      }
+
+      &_p {
+        width: 100%;
+        font-size: 1.3rem;
+      }
+
+      &_cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+    .access {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .information {
+      &_h2 {
+        color: $white;
+        text-align: center;
+        background-color: $green2;
+        padding: 30px;
+      }
+    }
+
+    .abilities {
+      padding-top: 30px;
+      background-color: #fff;
+
+      .contain {
+        margin: auto;
+        width: 100%;
+
+        &_h3 {
+          font-size: 2rem;
+          font-family: "Climate Crisis", sans-serif;
+          letter-spacing: 3px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        .skills {
+          margin: auto;
+          width: 100%;
+          display: block;
+          justify-content: center;
+          padding: 10px;
+
+          &_hard,
+          &_soft {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            border: 1px solid black;
+
+            &_h5 {
+              display: inline-block;
+              font-size: 1.5rem;
+              margin-bottom: 50px;
+            }
+
+            .skill {
+              display: flex;
+              gap: 20px;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      .contain {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+      }
+
+      &_h3 {
+        font-size: 2.3rem;
+        font-family: "Climate Crisis", sans-serif;
+        color: $white;
+        margin-bottom: 20px;
+      }
+
+      &_p {
+        font-size: 1.2rem;
+        color: $white;
+        margin-bottom: 20px;
+      }
+
+      .btn_p {
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .action_btn-1 {
+        background-color: $green1;
+      }
+
+      .action_btn-2 {
+        background-color: $green2;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    .header {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 70vh;
+      width: 100vw;
+
+      .cont-1{
+        display: flex;
+        text-indent: 30px;
+      }
+
+      &_text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+      }
+
+      &_h1 {
+        margin: auto;
+        font-family: "Climate Crisis", sans-serif;
+        font-size: 4.5rem;
+        color: $white;
+      }
+
+      &_h3{
+        text-align: center;
+      }
+
+      &_img {
+        display: block;
+        width: 100vw;
+      }
+
+      &_logo {
+        display: block;
+        margin: auto;
+        width: 50%;
+        border-radius: 0 150px 0 150px;
+      }
+    }
+
+    .project {
+      background-color: $white;
+      padding: 50px;
+
+      &_h3 {
+        font-family: "Climate Crisis", sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+      }
+
+      &_p {
+        width: 100%;
+        font-size: 1.3rem;
+      }
+
+      &_cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  .information {
+    &_h2 {
+      color: $white;
+      text-align: center;
+      background-color: $green2;
+      padding: 30px;
+    }
+  }
+
+  .abilities {
+    padding-top: 30px;
+    background-color: #fff;
+
+    .contain {
+      margin: auto;
+      width: 100%;
+
+      &_h3 {
+        font-size: 2rem;
+        font-family: "Climate Crisis", sans-serif;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .skills {
+        margin: auto;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        padding: 10px;
+
+        &_hard,
+        &_soft {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          justify-content: center;
+          border: 1px solid black;
+
+          &_h5 {
+            display: inline-block;
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+          }
+
+          .skill {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      }
+    }
   }
 </style>

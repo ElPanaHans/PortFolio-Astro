@@ -52,4 +52,58 @@ const { title, body } = Astro.props;
       }
     }
   }
+
+  @media (max-width: 575px){
+    .about {
+      margin: 0 auto;
+      display: block;
+      width: 90%;
+      background-color: $black;
+  
+      .contain {
+        display: block;
+        width: 100%;
+        color: $white;
+  
+        .titulo{
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+  
+        .info{
+          width: 90%;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    .about {
+      margin: 0 auto;
+      display: block;
+      width: 90%;
+      background-color: $black;
+  
+      .contain {
+        display: block;
+        width: 100%;
+        color: $white;
+  
+        .titulo{
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+  
+        .info{
+          width: 90%;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
 </style>

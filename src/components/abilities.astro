@@ -42,4 +42,30 @@ const { clase, body } = Astro.props;
         padding: 5px;
     }
   }
+
+  @media (max-width: 575px){
+    .container {
+      text-align:center;
+      background-color: $white;
+      width:150px;
+      border-radius: 5px;
+      border: 1px solid black;  
+  
+      i{
+          position: relative;
+          top: -20px;
+          color: #333;
+          padding: 15px;
+          background-color: #fff;
+          border: 1px solid black;
+          border-radius: 50%;
+          font-size: 1rem;
+      }
+  
+      &_p{
+          margin: auto;
+          padding: 5px;
+      }
+    }
+  }
 </style>
