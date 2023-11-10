@@ -8,9 +8,9 @@
 ## Proyectos
 
 * **Proyecto 1:** AP-TOOLS
-    * Enlace al repositorio de GitHub: (https://github.com/JuanP4bl0/AP-Tools)
+    * Enlace al repositorio de GitHub: [https://github.com/JuanP4bl0/AP-Tools]
 * **Proyecto 2:** HEX-COLOR
-    * Enlace al repositorio de GitHub: (https://github.com/JuanP4bl0/HexColor)
+    * Enlace al repositorio de GitHub: [https://github.com/JuanP4bl0/HexColor]
 
 ## Habilidades
 
